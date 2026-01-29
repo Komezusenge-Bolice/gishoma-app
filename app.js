@@ -37,5 +37,9 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+// simple test get request 
+app.get("/",(req,res)=>{
+res.send("API is running..................")
+});
 
 module.exports = app;
